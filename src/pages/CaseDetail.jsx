@@ -44,12 +44,14 @@ export default function CaseDetail() {
 
   if (!cas) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-6">
-        <Link to="/dashboard" className="text-primary hover:underline inline-flex items-center gap-1 mb-4">
-          <ArrowLeft size={14} /> Kembali
-        </Link>
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8 text-center text-gray-500">
-          Kasus tidak ditemukan.
+      <div className="h-full overflow-y-auto">
+        <div className="max-w-4xl mx-auto px-4 py-6">
+          <Link to="/dashboard" className="text-primary hover:underline inline-flex items-center gap-1 mb-4">
+            <ArrowLeft size={14} /> Kembali
+          </Link>
+          <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-8 text-center text-gray-500">
+            Kasus tidak ditemukan.
+          </div>
         </div>
       </div>
     );
@@ -69,8 +71,9 @@ export default function CaseDetail() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-6">
-      <Link to="/dashboard" className="text-primary hover:underline inline-flex items-center gap-1 mb-4">
+    <div className="h-full overflow-y-auto">
+      <div className="max-w-7xl mx-auto px-4 py-6">
+        <Link to="/dashboard" className="text-primary hover:underline inline-flex items-center gap-1 mb-4">
         <ArrowLeft size={14} /> Kembali ke Dashboard
       </Link>
 
@@ -216,5 +219,6 @@ export default function CaseDetail() {
         onClose={() => setToast(null)}
       />
     </div>
+  </div>
   );
 }

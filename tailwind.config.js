@@ -4,13 +4,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#005B96',
+        primary: {
+          DEFAULT: '#0866A6',
+          hover: '#065287',
+          light: '#EAF3FA',
+          subtle: '#D3E6F5',
+        },
         secondary: '#00A86B',
         danger: '#D32F2F',
-        bggray: '#F4F7F6',
+        bggray: '#F3F6FA',
+        card: '#FFFFFF',
+        border: '#DCE3EB',
+        slateText: '#172B4D',
       },
       fontFamily: {
-        sans: ['Inter', 'Roboto', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
     },
   },

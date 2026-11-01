@@ -17,3 +17,8 @@ export async function health() {
   const { data } = await api.get('/health');
   return data;
 }
+
+export async function getModelInfo() {
+  const { data } = await api.get('/api/v1/model-info');
+  return data;
+}

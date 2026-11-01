@@ -7,9 +7,9 @@ import CaseDetail from './pages/CaseDetail';
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-bggray">
+      <div className="h-[100dvh] w-screen overflow-hidden flex flex-col bg-bggray text-slateText">
         <Navbar />
-        <main>
+        <main className="flex-1 min-h-0 overflow-hidden relative">
           <Routes>
             <Route path="/" element={<Simulation />} />
             <Route path="/dashboard" element={<Dashboard />} />
